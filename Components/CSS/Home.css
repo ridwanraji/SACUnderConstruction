@@ -1,0 +1,128 @@
+body {
+    font-family: 'Gaegu', cursive;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: orangered;
+    background-color: white;
+  }
+  
+html {
+    width: 100%;
+    height: 100%;
+  }
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 0 25px;
+  }
+  
+@media (min-width: 768px) {
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin: 0 0 35px;
+    }
+  }
+  
+a {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    color: orangered;
+  }
+  
+a:focus, a:hover {
+    text-decoration: none;
+    color: #9b381d;
+  }
+
+.mastheader {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+.mastheader .intro-body {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  
+.mastheader .intro-body .brand-heading {
+    font-size: 50px;
+  }
+  
+.mastheader .intro-body .intro-text {
+    font-size: 18px;
+  }
+
+.mastheader .intro-body .logo {
+    width: 100px;
+    height: 100px;
+}
+  
+@media (min-width: 768px) {
+    .mastheader {
+      height: 100%;
+      padding: 0;
+    }
+    .mastheader .intro-body .brand-heading {
+      font-size: 100px;
+    }
+    .mastheader .intro-body .intro-text {
+      font-size: 18px;
+    }
+
+    .mastheader .intro-body .logo {
+        width: 250px;
+        height: 250px;
+    }
+  }
+
+ul.banner-social-buttons {
+    margin-top: 0;
+  }
+  
+@media (max-width: 1199px) {
+    ul.banner-social-buttons {
+      margin-top: 15px;
+    }
+  }
+
+@media (max-width: 768px) {
+    ul.banner-social-buttons li {
+      display: block;
+      margin-bottom: 20px;
+      padding: 0;
+    }
+    ul.banner-social-buttons li:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+.btn {
+    font-family: 'Gaegu', cursive;
+    font-weight: 200;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    border-radius: 0;
+  }
+  
+.btn-default {
+    color: orangered;
+    border: 1px solid orangered;
+    background-color: transparent;
+  }
+  
+.btn-default:focus, .btn-default:hover {
+    color: white;
+    border: 1px solid orangered;
+    outline: none;
+    background-color: orangered;
+  }
+
