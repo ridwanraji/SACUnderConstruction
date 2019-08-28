@@ -2,9 +2,8 @@ html,
 body {
   font-family: 'Roboto', sans-serif;
   height: 100%;
-  background-color: white;
-  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-  display: flex;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .sac-nav {
@@ -16,12 +15,14 @@ body {
   width: 60px;
 }
 
+.sac-nav .navbar-toggler {
+  padding: 5px;
+}
+
 .sac-nav .nav-item {
-  margin-left: 10px;
-  font-weight: 400;
   font-size: 13px;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 3px;
   color: white;
   background-color: transparent;
   border-bottom: .25rem solid transparent;
@@ -39,71 +40,103 @@ body {
   border-bottom-color: orangered;
 }
 
+
 @media (min-width: 768.1px) {
   .sac-nav {
-    height: 100px;
     background-color: black;
     text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
   }
 
+
   .sac-header-logo-img {
-    width: 100px;
+    width: 60px;
   }
 
   .sac-nav .nav-item {
     margin-left: 10px;
-    font-weight: 400;
-    font-size: 13px;
+    font-size: 15px;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 3px;
     color: white;
     background-color: transparent;
     border-bottom: .25rem solid transparent;
     text-decoration: none;
   }
-  
+
   .sac-nav .nav-item:hover,
   .sac-nav .nav-item:focus {
     color: white;
     border-bottom-color: white;
   }
-  
+
   .sac-nav .active {
     color: orangered;
     border-bottom-color: orangered;
   }
-
 }
 
-@media (min-width: 1440.1px) {
+@media (min-width: 1024px) {
   .sac-nav {
-    height: 100px;
     background-color: black;
     text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
   }
 
+
   .sac-header-logo-img {
-    width: 100px;
+    width: 60px;
   }
 
   .sac-nav .nav-item {
     margin-left: 10px;
-    font-weight: 500;
-    font-size: 17px;
+    font-size: 15px;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
+    letter-spacing: 3px;
     color: white;
     background-color: transparent;
     border-bottom: .25rem solid transparent;
     text-decoration: none;
   }
-  
+
   .sac-nav .nav-item:hover,
   .sac-nav .nav-item:focus {
     color: white;
     border-bottom-color: white;
   }
-  
+
+  .sac-nav .active {
+    color: orangered;
+    border-bottom-color: orangered;
+  }
+}
+
+
+@media (min-width: 1440.1px) {
+  .sac-nav {
+    background-color: black;
+    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  }
+
+  .sac-header-logo-img {
+    width: 80px;
+  }
+
+  .sac-nav .nav-item {
+    margin-left: 10px;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: white;
+    background-color: transparent;
+    border-bottom: .25rem solid transparent;
+    text-decoration: none;
+  }
+
+  .sac-nav .nav-item:hover,
+  .sac-nav .nav-item:focus {
+    color: white;
+    border-bottom-color: white;
+  }
+
   .sac-nav .active {
     color: orangered;
     border-bottom-color: orangered;
